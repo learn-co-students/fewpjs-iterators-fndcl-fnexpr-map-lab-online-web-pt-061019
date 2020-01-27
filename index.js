@@ -20,3 +20,5 @@ const titleCased = () => {
     return upcaseFirstLetter.join(' ')
   });
 };
+
+titleCased()
