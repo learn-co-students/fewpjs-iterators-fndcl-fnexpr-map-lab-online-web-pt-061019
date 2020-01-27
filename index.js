@@ -13,13 +13,17 @@ const tutorials = [
 
 
 function toTitleCase(str) {
-  return str.replace(
-      /\w\S*/g,
-      function(txt) {
-          return txt.charAt(0).toUpperCase() + txt.substr(1);
+  // return str.replace(
+  //     /\w\S*/g,
+  //     function(txt) {
+  //         return txt.charAt(0).toUpperCase() + txt.substr(1);
 
-        }
-  );
+  //       }
+  // );
+  return str
+    .split(' ')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
 }
 
 
